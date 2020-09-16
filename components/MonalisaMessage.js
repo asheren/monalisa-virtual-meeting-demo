@@ -14,7 +14,7 @@ const getMonaMessage = ({ who, meetingTitle, meetingDate, meetingTime }) => {
   const minutesToGo = Math.floor(ms / 60000);
 
   const when = minutesToGo > 59 ? `${Math.floor(minutesToGo / 60)} hours` : `${minutesToGo} minutes`
-  return `${who} has a meeting called ${meetingTitle} coming up in ${when}`
+  return `${who} has a meeting coming up in ${when}`
 };
 
 class MonalisaMessage extends React.Component {
